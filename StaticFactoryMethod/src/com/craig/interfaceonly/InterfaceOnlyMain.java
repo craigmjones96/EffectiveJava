@@ -1,8 +1,5 @@
 package com.craig.interfaceonly;
 
-import com.craig.interfaceonly.animal.impl.Animal;
-import com.craig.interfaceonly.animal.impl.Dog;
-
 public class InterfaceOnlyMain {
 
 	public static void main(String[] args) {
@@ -14,8 +11,10 @@ public class InterfaceOnlyMain {
 		System.out.println(dog.type());
 		System.out.println(dog.makeNoise());
 		
-		Dog dog2 = (Dog) AnimalsFactoryMethod.getDog();
-		System.out.println(dog2.type());
-		System.out.println(dog2.makeNoise());
+		// cant do this below as the implementation classes
+		// are hidden so the API only offers up the interface
+		// Dog dog2 = (Dog) AnimalsFactoryMethod.getDog();
+		// System.out.println(dog2.type());
+		// System.out.println(dog2.makeNoise());
 	}
 }

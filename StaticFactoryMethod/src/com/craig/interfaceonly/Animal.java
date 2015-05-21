@@ -1,4 +1,4 @@
-package com.craig.interfaceonly.animal.impl;
+package com.craig.interfaceonly;
 
 public interface Animal {
 

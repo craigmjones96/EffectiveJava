@@ -1,8 +1,5 @@
 package com.craig.interfaceonly;
 
-import com.craig.interfaceonly.animal.impl.Animal;
-import com.craig.interfaceonly.animal.impl.Cat;
-import com.craig.interfaceonly.animal.impl.Dog;
 
 public class AnimalsFactoryMethod {
 
@@ -14,5 +11,45 @@ public class AnimalsFactoryMethod {
 	
 	public static Animal getCat() {
 		return Cat.newInstance();
+	}
+	
+	private static class Dog implements Animal {
+
+		protected Dog() {}
+		
+		public static Animal newInstance() {
+			return new Dog();
+		}
+		
+		@Override
+		public String type() {
+			return "I am a dog";
+		}
+
+		@Override
+		public String makeNoise() {
+			return "Woof!";
+		}
+
+	}
+	
+	private static class Cat implements Animal {
+
+		protected Cat() {}
+		
+		public static Animal newInstance() {
+			return new Cat();
+		}
+		
+		@Override
+		public String type() {
+			return "I am a cat";
+		}
+
+		@Override
+		public String makeNoise() {
+			return "Meow!";
+		}
+
 	}
 }
