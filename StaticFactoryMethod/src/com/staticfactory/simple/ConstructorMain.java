@@ -1,4 +1,4 @@
-package com.craig.simple;
+package com.staticfactory.simple;
 
 
 public class ConstructorMain {
