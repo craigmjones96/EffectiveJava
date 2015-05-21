@@ -1,3 +1,3 @@
 # EffectiveJava
 
-Examples and tutorials from Effective Java (the book)
+My examples for some of the concepts from the book Effective Java

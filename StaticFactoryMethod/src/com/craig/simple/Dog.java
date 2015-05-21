@@ -1,4 +1,4 @@
-package com.craig.constructor;
+package com.craig.simple;
 
 public class Dog {
 	
