@@ -13,5 +13,10 @@ public class Main {
 		FootballTeamFacts facts = builder.build();
 		
 		System.out.println(facts.toString());
+		
+		// FootballTeamFacts facts2 = new FootballTeamFacts();
+		// can't do this anymore as we have a private constructor that only
+		// takes a FootballTeamFactsBuilder. So we must use the builder to
+		// create the facts object every time
 	}
 }
