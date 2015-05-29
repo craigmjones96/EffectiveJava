@@ -14,5 +14,7 @@ public class Main {
 		
 		MySingletonStaticFactoryMethod singleton2 = MySingletonStaticFactoryMethod.getInstance();
 		singleton2.sayHello();
+		
+		MySingletonEnum.INSTANCE.sayHello();
 	}
 }
