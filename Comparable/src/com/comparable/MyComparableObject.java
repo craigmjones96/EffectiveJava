@@ -8,5 +8,7 @@ public class MyComparableObject implements Comparable<MyComparableObject> {
 		return 0;
 	}
 
+	// TODO: Implement the compareTo method
+	// TODO: create a comparator class to handle fields that don't implement Comparable
 	
 }
