@@ -3,7 +3,6 @@ package com.accessibility;
 import com.accessibility.package1.Package1;
 
 public class AccessibilityMain {
-	// TODO: public arrays example
 	
 	public static void main(String[] args) {
 		Package1 package1 = new Package1();
