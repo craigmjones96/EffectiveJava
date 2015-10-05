@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class InheritanceMain {
 
 	public static void main(String[] args) {
-		ArrayListExtension ext = new ArrayListExtension();
+		MyArrayListImplementationExtension ext = new MyArrayListImplementationExtension();
 		System.out.println("ext count: " + ext.getAddCount());
 		
 		System.out.println("adding 3 elements via addAll");
