@@ -28,7 +28,7 @@ public class MyArrayListImplementationExtension extends MyArrayListImplementatio
 	}
 
 	// This method wont work well as it will initially add to the count the number
-	// of elements that are going to be added. Then what the developer doesnt seem
+	// of elements that are going to be added. Then what the developer doesn't seem
 	// to know is that internally the super.addAll takes each element from the collection
 	// and calls the add() implementation... in this case it has been overridden and 
 	// actually increments the addCount as well as the addAll method. This means if the 
